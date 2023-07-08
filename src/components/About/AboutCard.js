@@ -14,7 +14,8 @@ function AboutCard() {
             since 2020 , I have also worked with NestJs (node js framework)
             <br />
             Additionally, I am currently employed as a lead solidity developer
-            at Rapid Innovation.
+            at
+            <a href="https://rapidinnovation.io"> Rapid Innovation</a> .
             <br />
             <br />
             Activities that I love to do in my free time!

@@ -466,6 +466,8 @@ button:focus {
 }
 
 .project-card-view {
+  position: relative;
+  width: 75em;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
@@ -473,6 +475,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -542,6 +545,40 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+}
+
+.project-card-title {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+  margin-bottom: 0; /* Adjust the margin as needed */
+}
+
+.project-card-description {
+  color: white !important;
+  font-size: 1.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+  margin-bottom: 0; /* Adjust the margin as needed */
 }
 
 /* --------- */
@@ -746,4 +783,92 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.media {
+  width: 100%;
+  height: 55rem;
+  object-fit: contain;
+}
+
+.carousel {
+  height: 100%;
+  width: 75em;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: black !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease 0s !important;
+}
+
+.item {
+  background-color: black;
+}
+
+.index {
+  background-color: transparent;
+  height: 50px;
+  width: 60px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0.1rem;
+  font-weight: bold;
+  font-family: Roboto;
+  padding: 0.1rem 0.3rem;
+  left: 1rem;
+  opacity: 0.75;
+}
+
+.project-view-close {
+  cursor: pointer;
+  border: 0px solid #3498db;
+  background-color: transparent;
+  height: 50px;
+  width: 60px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0.1rem;
+  font-weight: bold;
+  font-family: Roboto;
+  padding: 0.1rem 0.3rem;
+  right: 1rem;
+  opacity: 0.75;
+}
+
+.caption-container {
+  position: absolute;
+  bottom: 0;
+  left: 20rem;
+  right: 20rem;
+}
+
+.caption {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: Roboto;
+  background-color: lightgray;
+  color: black;
+  width: fit-content;
+  margin: 0 auto;
+  opacity: 0.75;
+}
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+  top: 27rem;
+}
+.btn-prev {
+  left: 1rem;
+}
+.btn-next {
+  right: 1rem;
 }

@@ -7,8 +7,8 @@ function Type() {
       options={{
         strings: [
           "Soliidity Developer",
-          "Subgraph Developer",
           "Backend Developer",
+          "Subgraph Developer",
           "Open Source Contributor",
         ],
         autoStart: true,
