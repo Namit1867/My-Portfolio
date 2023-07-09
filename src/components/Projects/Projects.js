@@ -1,38 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import planetIcon from "../../Assets/Projects/planetIcon.png";
-import exofiIcon from "../../Assets/Projects/exofiIcon.png";
-import portfolioNFTIcon from "../../Assets/Projects/portfolioNFTIcon.png";
-import dibzIcon from "../../Assets/Projects/dibzIcon.png";
-import blogBeatIcon from "../../Assets/Projects/blogBeatIcon.png";
 
 function Projects() {
-  const [isCarouselOpen, setIsCarouselOpen] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-  ]);
-
-  const handleCardClick = (indice) => {
-    const carouselArr = isCarouselOpen.map((e, index) => {
-      if (indice == index) return true;
-      return isCarouselOpen[index];
-    });
-    setIsCarouselOpen(carouselArr);
-  };
-
-  const handleCloseCarousel = (indice) => {
-    const carouselArr = isCarouselOpen.map((e, index) => {
-      if (indice == index) return false;
-      return isCarouselOpen[index];
-    });
-    setIsCarouselOpen(carouselArr);
-  };
-
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -49,16 +20,9 @@ function Projects() {
             paddingBottom: "10px",
           }}
         >
-          <Col
-            onClick={() => handleCardClick(0)}
-            md={4}
-            className="project-card"
-          >
+          <Col md={4} className="project-card">
             <ProjectCard
               cardNum={0}
-              isCarouselOpen={isCarouselOpen[0]}
-              onClose={handleCloseCarousel}
-              imgPath={planetIcon}
               isBlog={false}
               title="Planet Finance"
               techStack="ERC20, Yield Farming, Lending And Borrowing, AMM, Staking Vaults, Frontend Integration, Test Cases(Hardhat), Backend"
@@ -68,16 +32,9 @@ function Projects() {
             />
           </Col>
 
-          <Col
-            onClick={() => handleCardClick(1)}
-            md={4}
-            className="project-card"
-          >
+          <Col md={4} className="project-card">
             <ProjectCard
               cardNum={1}
-              isCarouselOpen={isCarouselOpen[1]}
-              onClose={handleCloseCarousel}
-              imgPath={exofiIcon}
               isBlog={false}
               title="ExoFi"
               techStack="ERC20, ERC721, AMM, Subgraph, MultiForwarder(EIP-2771), Token Launchpad, Dynamic Condition Token Locking System, Frontend Integration, Test Cases(Hardhat)"
@@ -87,16 +44,9 @@ function Projects() {
             />
           </Col>
 
-          <Col
-            onClick={() => handleCardClick(2)}
-            md={4}
-            className="project-card"
-          >
+          <Col md={4} className="project-card">
             <ProjectCard
               cardNum={2}
-              isCarouselOpen={isCarouselOpen[2]}
-              onClose={handleCloseCarousel}
-              imgPath={portfolioNFTIcon}
               isBlog={false}
               title="Portfolio NFT"
               techStack="ERC20, ERC721, Subgraph, Diamond Proxy(EIP-2535), Yield Farm, Frontend Integration, Test Cases(Hardhat)"
@@ -106,16 +56,9 @@ function Projects() {
             />
           </Col>
 
-          <Col
-            onClick={() => handleCardClick(3)}
-            md={4}
-            className="project-card"
-          >
+          <Col md={4} className="project-card">
             <ProjectCard
               cardNum={3}
-              isCarouselOpen={isCarouselOpen[3]}
-              onClose={handleCloseCarousel}
-              imgPath={dibzIcon}
               isBlog={false}
               title="Dibz"
               techStack="Betting Smart Contracts, Subgraph, ERC-1967(Proxy), Frontend Integration, Test Cases(Hardhat)"
@@ -125,16 +68,9 @@ function Projects() {
             />
           </Col>
 
-          <Col
-            onClick={() => handleCardClick(4)}
-            md={4}
-            className="project-card"
-          >
+          <Col md={4} className="project-card">
             <ProjectCard
               cardNum={4}
-              isCarouselOpen={isCarouselOpen[4]}
-              onClose={handleCloseCarousel}
-              imgPath={blogBeatIcon}
               isBlog={false}
               title="Blog Beat"
               techStack="Frontend, Backend, Content Generation, Open AI, Langchain, Web Scapping, AWS s3"

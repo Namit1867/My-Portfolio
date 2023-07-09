@@ -24,6 +24,7 @@ import blog3 from "../../Assets/BlogBeatAssets/blog3.png";
 import blog4 from "../../Assets/BlogBeatAssets/blog4.png";
 import blog5 from "../../Assets/BlogBeatAssets/blog5.png";
 
+
 const PlanetFinanceItems = [
   <div className="item">
     <img src={Planet1} className="media" />
@@ -151,11 +152,6 @@ const ProjectView = (props) => {
     }
   };
 
-  const handleButtonClick = (e) => {
-    e.stopPropagation();
-    props.onClose(props.index)
-   };
-
   return (
     <div className="carousel">
       <AliceCarousel
@@ -165,7 +161,6 @@ const ProjectView = (props) => {
         items={items}
       />
       <p className="index">{`${mainIndex + 1}/${items.length}`}</p>
-      <button onClick={handleButtonClick} className="project-view-close">X</button>
 
       <div className="btn-prev" onClick={slidePrev}>
         &lang;
