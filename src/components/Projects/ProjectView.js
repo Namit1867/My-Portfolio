@@ -37,7 +37,7 @@ const PlanetFinanceItems = [
   </div>,
   <div className="item">
     <video width="100%" controls className="media">
-      <source src={"https://drive.google.com/uc?id=1r_vPT7Ql9PW7CLURvqTt2ufcuf4WkU44"} />
+      <source src={"https://drive.google.com/uc?id=1uUuNCoYQQmfbbQrdO043jTzIq8NWO2Bm"} />
       Your browser does not support the video tag.
     </video>
   </div>,
